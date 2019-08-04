@@ -49,7 +49,7 @@ typedef struct				s_mappingAtmega328pToArduino
 }							t_mappingAtmega328pToArduino;
 
 void						libPinMode(const t_pins pin, const t_pinMode mode);
-t_status					libDigitalRead(t_pins pin);
+t_status					libDigitalRead(const t_pins pin);
 void						libDelay(const unsigned long ms);
 void						libDigitalWrite(const t_pins pin, const t_status status);
 
