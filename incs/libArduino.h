@@ -45,7 +45,7 @@ typedef struct				s_mappingAtmega328pToArduino
 {
 	const t_pins			pin;
 	const unsigned char		reg;
-	unsigned char			var;
+	unsigned char			*var;
 }							t_mappingAtmega328pToArduino;
 
 void						libPinMode(const t_pins pin, const t_pinMode mode);
