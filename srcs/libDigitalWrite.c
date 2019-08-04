@@ -35,7 +35,7 @@ void						libDigitalWrite(const t_pins pin, const t_status status)
 						mapping[DIGITAL_PIN_NUMBER] = {
 			{.pin = LIB_PIN0, .reg = 0x1, .var = (unsigned char*)&PORTD},
 			{.pin = LIB_PIN1, .reg = 0x2, .var = (unsigned char*)&PORTD},
-			{.pin = LIB_PIN2, .reg = 0x4, .var = (unsigned char *)&PORTD},
+			{.pin = LIB_PIN2, .reg = 0x4, .var = (unsigned char*)&PORTD},
 			{.pin = LIB_PIN3, .reg = 0x8, .var = (unsigned char*)&PORTD},
 			{.pin = LIB_PIN4, .reg = 0x10, .var = (unsigned char*)&PORTD},
 			{.pin = LIB_PIN5, .reg = 0x20, .var = (unsigned char*)&PORTD},
