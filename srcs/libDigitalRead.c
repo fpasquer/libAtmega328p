@@ -15,7 +15,7 @@ t_status				readDigitalArduino(const unsigned char reg,
 	return (((*var) & reg) != 0 ? HIGH : LOW);
 }
 
-t_status				libDigitalRead(t_pins pin)
+t_status				libDigitalRead(const t_pins pin)
 /**
  *	DESCRIPTION :
  *		Reads the value from a specified digital pin, either HIGH or LOW.
