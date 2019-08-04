@@ -9,7 +9,7 @@ static void					setPinMode(const unsigned char reg,
  *	PARAMS :
  *		reg => the bit of ddr
  *		mode => OUTPUT|INPUT
- *		var => constant form io.h
+ *		var => Global form io.h Can be DDRD or DDRB
  *	RETURN :
  *		void
  * */
@@ -23,11 +23,11 @@ static void					setPinMode(const unsigned char reg,
 void					libPinMode(const t_pins pin,
 	const t_pinMode mode)
 /**
- *	DESCRIPTION : 
+ *	DESCRIPTION :
  *		Configures the specified pin to behave either as an input or an output.
  *	PARAMS :
  *		pin => Arduino pin you want to set up
- *		mode => OUTPUT|INPUT
+ *		mode => OUTPUT | INPUT
  *	RETURN :
  *		void
  * */

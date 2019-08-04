@@ -3,6 +3,16 @@
 static void					setDigitalWrite(const unsigned char reg,
 	const t_status status,
 	unsigned char *var)
+/**
+ *	DESCRIPTION :
+ *		Set port register to the status
+ *	PARAMS :
+ *		reg => the bit corresponding to PORT*
+ *		status => HIGH | LOW
+ *		var => Global form io.h Can be PORTD or PORTB
+ *	RETURN :
+ *		void
+ * */
 {
 	if (status == HIGH)
 		(*var) |= reg;
@@ -11,6 +21,15 @@ static void					setDigitalWrite(const unsigned char reg,
 }
 
 void						libDigitalWrite(const t_pins pin, const t_status status)
+/**
+ *	DESCRIPTION :
+ *		Write a HIGH or a LOW value to a digital pin
+ *	PARAMS :
+ *		pin => Arduino pin you want to set up
+ *		status => HIGH | LOW
+ *	RETURN :
+ *		void
+ * */
 {
 	t_mappingAtmega328pToArduino
 						mapping[DIGITAL_PIN_NUMBER] = {
